@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+	<!-- content goes here-->
+	<!-- content goes here-->
+	<!-- content goes here-->
+	<!-- content goes here-->
+	<!-- content goes here-->
+	<!-- content goes here-->
+	<!-- content goes here-->
+	<!-- content goes here-->
+	<!-- content goes here-->
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="app_framework/css/af.ui.min.css">
+		<link rel="stylesheet" type="text/css" href="app_framework/css/icons.min.css">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+		<title>Your New Application</title>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<style type="text/css">
+			/* Prevent copy paste for all elements except text fields */
+			*  { -webkit-user-select:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0); }
+			input, textarea  { -webkit-user-select:text; }
+		</style>
+		<script src="intelxdk.js"></script>
+		<script type="text/javascript">
+			/* This code is used to run as soon as Intel activates */
+			var onDeviceReady=function(){
+			//hide splash screen
+			intel.xdk.device.hideSplashScreen();
+			};
+			document.addEventListener("intel.xdk.device.ready",onDeviceReady,false);
+		</script>
+		<script type="application/javascript" src="app_framework/appframework.min.js"></script>
+		<script type="application/javascript" src="app_framework/appframework.ui.min.js"></script>
+		<script src="js/app.js"></script>
+	</head>
+
+	<body id="afui">
+
+		<!-- content goes here-->
+
+		<div class="uwrap" id="content">
+			<div class="upage panel" id="mainpage" data-header="af-header-0" data-footer="none">
+				<div class="upage-outer">
+					<header class="container-group inner-element uib_w_2" data-uib="app_framework/header" data-ver="0" id="af-header-0">
+						<h1>Prakiraan Cuaca</h1>
+						<div class="widget-container wrapping-col single-centered"></div>
+						<div class="widget-container content-area horiz-area wrapping-col left"></div>
+						<div class="widget-container content-area horiz-area wrapping-col right"></div>
+					</header>
+					<div class="upage-content" id="mainsub">
+
+						<div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
+							<div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
+								<div class="widget-container content-area vertical-col">
+
+									<div class="table-thing with-label widget uib_w_10 d-margins" data-uib="app_framework/input" data-ver="0">
+										<label class="narrow-control label-top-left" for="countryCodeFld">Negara</label>
+										<input class="wide-control" placeholder="Negara" type="text" id="countryCodeFld" value="ID">
+									</div>
+									<div class="table-thing with-label widget uib_w_11 d-margins" data-uib="app_framework/input" data-ver="0">
+										<label class="narrow-control label-top-left" for="cityFld">Kota</label>
+										<input class="wide-control" type="text" id="cityFld" placeholder="Kota" value="Lamongan">
+									</div>
+
+									<a class="button widget uib_w_4 d-margins icon check" href="#" data-uib="app_framework/button" data-ver="0" id="weatherBtn">Cek Cuaca</a>
+									<div class="table-thing with-label widget uib_w_5 d-margins" data-uib="app_framework/input" data-ver="0">
+										<label class="narrow-control label-top-left" for="weatherFld">Cuaca</label>
+
+										<input class="wide-control" type="text" id="weatherFld" placeholder="Cuaca" readonly="">
+									</div>
+									<div class="table-thing with-label widget uib_w_6 d-margins" data-uib="app_framework/input" data-ver="0">
+										<label class="narrow-control label-top-left" for="tempFld">Suhu</label>
+
+										<input class="wide-control" placeholder="°C" type="text" id="tempFld" readonly="">
+									</div>
+									<div class="table-thing with-label widget uib_w_7 d-margins" data-uib="app_framework/input" data-ver="0">
+										<label class="narrow-control label-top-left" for="pressFld">Tekanan Udara</label>
+
+										<input class="wide-control" type="text" id="pressFld" readonly="">
+									</div>
+									<div class="table-thing with-label widget uib_w_9 d-margins" data-uib="app_framework/input" data-ver="0">
+										<label class="narrow-control label-top-left" for="humiFld">Kelambaban Udara</label>
+
+										<input class="wide-control" type="text" id="humiFld" readonly="">
+									</div>
+									<div class="table-thing with-label widget uib_w_8 d-margins" data-uib="app_framework/input" data-ver="0">
+										<label class="narrow-control label-top-left" for="speedFld">Kecepatan Angin</label>
+
+										<input class="wide-control" type="text" id="speedFld" readonly="">
+									</div><span class="uib_shim"></span>
+								</div>
+							</div>
+							<span class="uib_shim"></span>
+						</div>
+					</div>
+					<!-- /upage-content -->
+
+				</div>
+				<!-- /upage-outer -->
+
+			</div>
+			<!-- /upage -->
+
+		</div>
+		<!-- /uwrap -->
+	</body>
+
+</html>
