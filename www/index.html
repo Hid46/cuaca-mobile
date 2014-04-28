@@ -12,6 +12,7 @@
 	<!-- content goes here-->
 	<!-- content goes here-->
 	<!-- content goes here-->
+	<!-- content goes here-->
 
 	<head>
 		<link rel="stylesheet" type="text/css" href="app_framework/css/af.ui.min.css">
@@ -26,6 +27,11 @@
 			*  { -webkit-user-select:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0); }
 			input, textarea  { -webkit-user-select:text; }
 		</style>
+        <link href="select2-3.4.6/select2.css" rel="stylesheet"/>
+          <script src="select2-3.4.6/select2.js"></script>
+        <script>
+            $(document).ready(function() { $("#el").select2(); });
+        </script>
 		<script src="intelxdk.js"></script>
 		<script type="text/javascript">
 			/* This code is used to run as soon as Intel activates */
@@ -38,6 +44,8 @@
 		<script type="application/javascript" src="app_framework/appframework.min.js"></script>
 		<script type="application/javascript" src="app_framework/appframework.ui.min.js"></script>
 		<script src="js/app.js"></script>
+        <script src="js/e17.js"></script>
+        <script src="js/e17_2.js"></script>
 	</head>
 
 	<body id="afui">
@@ -63,27 +71,48 @@
 										<label class="narrow-control label-top-left" for="countryCodeFld">Negara</label>
 										<input class="wide-control" placeholder="Negara" type="text" id="countryCodeFld" value="ID">
 									</div>
-
+                                    <div class="table-thing with-label widget uib_w_12 d-margins" data-uib="app_framework/select" data-ver="0">
+										<label class="narrow-control label-top-left" for="cityFld">Kota</label>
+										<select id="el">
+											<option value="lamongan">Lamongan</option>
+											<option value="lumajang">Lumajang</option>
+											<option value="madiun">Madiun</option>
+											<option value="magelang">Magelang</option>
+											<option value="magetan">Magetan</option>
+											<option value="majalengka">Majalengka</option>
+											<option value="malang">Malang</option>
+											<option value="mojokerto">Mojokerto</option>
+											<option value="mojosari">Mojosari</option>
+											<option value="mungkid">Mungkid</option>
+											<option value="ngamprah">Ngamprah</option>
+											<option value="nganjuk">Nganjuk</option>
+											<option value="ngawi">Ngawi</option>
+											<option value="pacitan">Pacitan</option>
+											<option value="pamekasan">Pamekasan</option>
+											<option value="pandeglang">Pandeglang</option>
+											<option value="pare">Pare</option>
+										</select>
+									</div>
 									<div class="table-thing with-label widget uib_w_12 d-margins" data-uib="app_framework/select" data-ver="0">
 										<label class="narrow-control label-top-left" for="cityFld">Kota</label>
 										<select class="wide-control" id="cityFld">
 											<option value="lamongan">Lamongan</option>
-                                            <option value="lumajang">Lumajang</option>
-                                            <option value="madiun">Madiun</option>
-                                            <option value="magelang">Magelang</option>
-                                            <option value="magetan">Magetan</option>
-                                            <option value="majalengka">Majalengka</option>
-                                            <option value="malang">Malang</option>
-                                            <option value="mojokerto">Mojokerto</option>
-                                            <option value="mojosari">Mojosari</option>
-                                            <option value="mungkid">Mungkid</option>
-                                            <option value="ngamprah">Ngamprah</option>
-                                            <option value="nganjuk">Nganjuk</option>
-                                            <option value="ngawi">Ngawi</option>
-                                            <option value="pacitan">Pacitan</option>
-                                            <option value="pamekasan">Pamekasan</option>
-                                            <option value="pandeglang">Pandeglang</option>
-                                            <option value="pare">Pare</option>
+											<option value="lumajang">Lumajang</option>
+											<option value="madiun">Madiun</option>
+											<option value="magelang">Magelang</option>
+											<option value="magetan">Magetan</option>
+											<option value="majalengka">Majalengka</option>
+											<option value="malang">Malang</option>
+											<option value="mojokerto">Mojokerto</option>
+											<option value="mojosari">Mojosari</option>
+											<option value="mungkid">Mungkid</option>
+											<option value="ngamprah">Ngamprah</option>
+											<option value="nganjuk">Nganjuk</option>
+											<option value="ngawi">Ngawi</option>
+											<option value="pacitan">Pacitan</option>
+											<option value="pamekasan">Pamekasan</option>
+											<option value="pandeglang">Pandeglang</option>
+											<option value="pare">Pare</option>
 										</select>
 									</div>
 
@@ -123,6 +152,19 @@
 				</div>
 				<!-- /upage-outer -->
 
+			</div>
+			<div class="upage panel" id="uib_page_1" data-header="none" data-footer="none">
+				<div class="upage-outer">
+					<div id="uib_page_1sub" class="upage-content ">
+                       
+<select id="e17_2" style="width:300px">
+<option alt="pink">red</option>
+<option alt="cyan">blue</option>
+</select>
+
+					</div>
+				</div>
+				<!-- /upage-outer -->
 			</div>
 			<!-- /upage -->
 
